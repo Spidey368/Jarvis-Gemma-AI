@@ -1,19 +1,20 @@
-# Jarvis: Local AI Voice Assistant
-A voice-activated assistant built with Python that runs entirely locally on Ubuntu.
+# J.A.R.V.I.S. v5.0 (Stark Edition)
+A sophisticated, voice-activated AI assistant running locally on Ubuntu. This project integrates Local LLMs with system-level diagnostics to create a professional-grade personal assistant.
 
-## Features
-- **Voice Recognition:** Uses Google Speech Recognition API.
-- **Local LLM:** Powered by **Gemma 3 (1B)** via Ollama for privacy and speed.
-- **Custom Hardware Solution:** Bypassed internal Intel 54c8 audio driver issues by using an Android phone as a wireless mic via DroidCam.
-- **App Control:** Triggered by the wake-word "Jarvis" followed by specific clap patterns.
+## 🚀 Key Features
+- **Intelligent Reasoning:** Powered by **Gemma 3 (1B)** via Ollama, customized with a professional "Stark" persona.
+- **System Awareness:** Real-time monitoring of CPU, RAM, and Battery status using `psutil`.
+- **Direct Voice Navigation:** Command-based web launching (e.g., "Open my YouTube channel") and terminal initialization.
+- **Advanced VAD:** Tuned Voice Activity Detection to allow for natural pauses and complex mathematical queries.
+- **Hardware Hack:** Utilizes an Android device via DroidCam as a wireless microphone bridge to bypass Linux driver limitations.
 
-## Tech Stack
+## 🛠️ Tech Stack
 - **OS:** Ubuntu Linux
-- **Model:** Gemma 3 (1B)
+- **Model:** Google Gemma 3 (1B)
 - **Language:** Python 3.10+
-- **Audio Routing:** ALSA & PipeWire with DroidCam loopback.
+- **Key Libraries:** `ollama`, `speech_recognition`, `pyttsx3`, `psutil`
 
-## How to Run
-1. Start Ollama: `ollama run gemma3:1b`
-2. Connect mobile device via DroidCam (ensure Audio is checked).
-3. Run `python3 jarvis.py`.
+## 📦 Installation & Setup
+1. **Initialize the Brain:**
+   ```bash
+   ollama run gemma3:1b
